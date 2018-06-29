@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: hidden;
+
+}
 .logo_wrap {
   background-color: #000;
   padding-top: 20px;
