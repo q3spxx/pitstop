@@ -141,19 +141,6 @@ header {
 .btn2 {
   border-radius: 20px;
 }
-.border {
-}
-.border::before {
-}
-.border::after {
-  content: '';
-  background-color: rgb(238, 46, 36);
-  height: 6px;
-  width: 10000px;
-  position: absolute;
-  left: 100%;
-  top: 16px;
-}
 .line {
   position: absolute;
 }
@@ -195,30 +182,25 @@ li:hover::before {
   background-color: rgba(238, 46, 36, 1);
 }
 .bezier {
-  display: inline;
-  position: relative;
+  display: inline-block;
 }
 .bezier_top {
-  display: inline-block;
+  margin-top: 14px;
+  box-sizing: border-box;
   border-right: 6px solid rgb(238, 46, 36);
   border-top: 6px solid rgb(238, 46, 36);
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border-radius: 0 80% 0 0;
-  position: absolute;
-  left: 0px;
-  top: 14px;
 }
 .bezier_bot {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
   border-left: 6px solid rgb(238, 46, 36);
   border-bottom: 6px solid rgb(238, 46, 36);
   border-radius: 0 0 0 80%;
-  position: absolute;
-  top: 38px;
-  left: 18px;
+  margin-left: 18px;
 }
 .top_right {
   display: inline-block;
