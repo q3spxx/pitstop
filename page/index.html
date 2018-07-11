@@ -45,10 +45,20 @@
                 <div class="social fb"></div>
                 <div class="social instagram"></div>
               </div>
-              <div class="profile">
-                <span class="profile_name">Антон</span>
-                <img class="profile_img" src="images/anton.png" alt="">
-                <img class="profile_arrow" src="images/arrow-down.png" alt="">
+              <div id="profile" class="profile">
+                <div class="profile_info">
+                  <span class="profile_name">Антон</span>
+                  <img class="profile_img" src="images/anton.png" alt="">
+                  <img class="profile_arrow" src="images/arrow-down.png" alt="">
+                </div>
+                <div id="profile_menu" class="profile_menu">
+                  <ul>
+                    <li class="profile_menu_item">Личный кабинет</li>
+                    <li class="profile_menu_item">База знаний</li>
+                    <li class="profile_menu_sep"></li>
+                    <li class="profile_menu_item">Выйти</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="header_right_bottom">
@@ -60,6 +70,81 @@
         </div>
       </div>
     </header>
+    <section>
+      <div class="bg bg_1">
+        <div class="section_padding">
+          <div class="wrapper">
+            <h1>Следите за нашими новостями</h1>
+            <div class="slider_root">
+              <div class="slider_row">
+                <div class="slider_left slider_screen">
+                  <div class="slider_image">
+                    <a href="#"><img src="images/news1.jpg" alt=""></a>
+                  </div>
+                  <div class="slider_image" data-id=1>
+                    <a href="#"><img src="images/news2.jpg" alt=""></a>
+                  </div>
+                  <div class="slider_image" data-id=2>
+                    <a href="#"><img src="images/news3.jpg" alt=""></a>
+                  </div>
+                  <div class="slider_image" data-id=2>
+                    <a href="#"><img src="images/news4.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="slider_menu">
+                  <a href="#">
+                    <div class="slider_menu_item slider_menu_item_selected">
+                      Открытие новой точки на Павелецкой
+                    </div>
+                  </a>
+                  <a href="#">
+                    <li class="slider_menu_item">
+                      Запуск продажи франшиз
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li class="slider_menu_item">
+                      Открытие новой точки в БЦ Савеловский Сити
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li class="slider_menu_item">
+                      Открытие новой точки Авиамоторная
+                    </li>
+                  </a>
+                </div>
+                <div class="slider_mess">
+                  <a href="#">
+                    <div class="slider_mess_text slider_mess_text_show">
+                      Открытие новой точки на Павелецкой
+                    </div>
+                    <div class="slider_mess_bg slider_mess_bg_show"></div>
+                    <div class="slider_mess_border slider_mess_border_show"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider_row">
+                <ul class="slider_left slider_enum">
+                  <li class="slider_enum_item">
+                    <div class="slider_enum_arc slider_enum_arc_selected"></div>
+                  </li>
+                  <li class="slider_enum_item">
+                    <div class="slider_enum_arc"></div>
+                  </li>
+                  <li class="slider_enum_item">
+                    <div class="slider_enum_arc"></div>
+                  </li>
+                  <li class="slider_enum_item">
+                    <div class="slider_enum_arc"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -9,6 +9,13 @@ body {
 ul {
   list-style-type: none;
 }
+h1 {
+  font-size: 1.44em;
+  font-family: 'AGBE';
+  text-align: center;
+  padding-bottom: 45px;
+  color: white;
+}
 .clearfix:after{
     content: '';
     display: block;
@@ -21,6 +28,9 @@ ul {
 }
 header {
   background-color: #000;
+}
+.section_padding {
+  padding: 45px 0;
 }
 .wrapper {
   width: 1170px;
@@ -166,9 +176,77 @@ header {
   background: url('../images/instagram.png') no-repeat;
 }
 .profile {
+  position: relative;
+  flex-direction: column;
+}
+.profile_info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+.profile_info:hover {
+  background-color: rgba(225, 255, 255, .3);
+  cursor: pointer;
+}
+.profile_menu {
+  position: absolute;
+  background-color: white;
+  top: 50px;
+  left: 100%;
+  margin-left: -158px;
+  border-radius: 2px;
+  z-index: 1;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  padding: 4px 0px;
+  visibility: hidden;
+  opacity: 0;
+}
+.profile_menu_shown {
+  visibility: visible;
+  opacity: 1;
+}
+.profile_menu::before {
+  content: '';
+  position: absolute;
+  border: solid transparent;
+  border-width: 6px;
+  border-bottom-color: rgba(0, 0, 0, .1);
+  margin: 0 -6px;
+  width: 0px;
+  height: 0px;
+  bottom: 100%;
+  right: 42px;
+}
+.profile_menu::after {
+  content: '';
+  position: absolute;
+  border: solid transparent;
+  border-width: 5px;
+  border-bottom-color: #fff;
+  margin: 0 -5px;
+  width: 0px;
+  height: 0px;
+  bottom: 100%;
+  right: 42px;
+}
+.profile_menu_item {
+  font-family: 'AGL';
+  font-size: 0.88em;
+  padding: 6px 12px;
+  min-width: 128px;
+  transition: background-color .2s ease;
+}
+.profile_menu_item:hover {
+  background-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+.profile_menu_sep {
+  background-color: rgb(168, 168, 168);
+  height: 1px;
+  margin: 4px 10px;
 }
 .profile_name {
   font-family: "AGB";
@@ -223,4 +301,155 @@ header {
   top: 10px;
   width: 53px;
   height: 6px;
+}
+
+.slider_root {
+  position: relative;
+}
+.slider_row {
+  display: flex;
+}
+.slider_left {
+  flex: 0 0 800px;
+}
+.slider_screen {
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  background-color: rgba(0, 0, 0, .3);
+}
+.slider_image {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .4s ease;
+}
+.slider_image img {
+  max-height: 360px;
+}
+.slider_image_selected {
+  opacity: 1;
+  z-index: 0;
+}
+.slider_menu {
+  display: flex;
+  flex-direction: column;
+}
+.slider_menu a {
+  color: white;
+  text-decoration: none;
+}
+.slider_menu_item {
+  display: flex;
+  position: relative;
+  padding: 0 20px;
+  font-family: "AGB";
+  height: 90px;
+  font-size: 16px;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  transition: color .2s ease, background-color .2s ease;
+}
+.slider_menu_item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -14px;
+  border-style: solid;
+  border-width: 45px 14px 45px 0px;
+  border-color: transparent transparent transparent transparent;
+  transition: border-color .2s ease;
+}
+.slider_menu_item_selected {
+  background-color: rgb(238, 46, 36);
+}
+.slider_menu_item_selected::before {
+  content: '';
+  border-color: transparent rgb(238, 46, 36) transparent transparent;
+}
+.slider_enum {
+  display: flex;
+  margin-top: 10px;
+  list-style-type: none;
+  justify-content: center;
+}
+.slider_enum_item {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.slider_enum_arc {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(168, 168, 168);
+  transition: width .2s ease, height .2s ease, background-color .2s ease;
+}
+.slider_enum_arc_selected {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(238, 46, 36);
+}
+.slider_mess {
+  position: absolute;
+  margin-top: 270px;
+  height: 70px;
+  width: 500px;
+}
+.slider_mess_text {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  color: transparent;
+  width: 500px;
+  height: 70px;
+  font-size: 16px;
+  color: white;
+  font-family: "AGB";
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .1s ease;
+}
+.slider_mess_text_show {
+  opacity: 1;
+}
+.slider_mess_bg {
+  position: absolute;
+  top: 70px;
+  width: 500px;
+  height: 0px;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 1;
+  transition: height .1s ease, top .1s ease;
+}
+.slider_mess_bg_show {
+  height: 70px;
+  top: 0px;
+}
+.slider_mess_border {
+  position: absolute;
+  top: 70px;
+  width: 0px;
+  height: 4px;
+  background-color: rgb(238, 46, 36);
+  z-index: 2;
+  transition: width .2s ease;
+}
+.slider_mess_border_show {
+  width: 500px;
+}
+.bg {
+  background-position: center;
+}
+.bg_1 {
+  background-image: url('../images/bg1.jpg');
 }
