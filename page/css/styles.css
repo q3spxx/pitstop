@@ -11,7 +11,7 @@ ul {
 }
 h1 {
   font-family: 'AGBE';
-  font-size: 1.72em;
+  font-size: 2.1em;
   text-align: center;
   margin: 16px 0;
 }
@@ -323,6 +323,56 @@ footer {
   top: 10px;
   width: 53px;
   height: 6px;
+}
+
+.offer_blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.offer_block {
+  display: flex;
+}
+.offer_block a {
+  text-decoration: none;
+}
+.offer_image {
+  border-radius: 20px;
+  border: 6px solid rgb(238, 46, 36);
+  background-color: black;
+  padding: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+  transition: background-color .2s ease;
+}
+.offer_image:hover {
+  background-color: rgb(238, 46, 36);
+  cursor: pointer;
+}
+.offer_image_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 56px;
+  margin-bottom: 10px;
+}
+.offer_image_text {
+  font-family: 'AGB';
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+.offer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offer_text_main {
+
+}
+.offer_text_adv {
+  font-family: 'AGBE';
+  font-size: 1.72em;
+  text-align: center;
 }
 
 .slider_root {
