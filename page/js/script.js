@@ -45,9 +45,9 @@
     const list = root.children[0].children[0];
     let elem = list.children[id];
     for (let child of list.children) {
-      child.classList.remove("slider_image_selected");
+      child.classList.remove("slider_content_selected");
     };
-    elem.classList.add("slider_image_selected");
+    elem.classList.add("slider_content_selected");
   };
   const changeMess = (mess, root) => {
     message = mess;
@@ -112,8 +112,8 @@
       const images = root.children[0].children[0].children;
       this.imageCount = images.length;
       for (let image of images) {
-        if (!image.children[0].children[0].complete) {
-          image.children[0].children[0].onload = () => {
+        if (!image.children[0].children[0].children[0].complete) {
+          image.children[0].children[0].children[0].onload = () => {
             this.imagesLoaded += 1;
             if (this.imageCount === this.imagesLoaded) this.onLoad();
           }
@@ -121,7 +121,7 @@
           this.imagesLoaded += 1;
         };
       }
-      images[0].classList.add("slider_image_selected");
+      images[0].classList.add("slider_content_selected");
 
       const items = root.children[0].children[1].children;
       const arcs = root.children[1].children[0].children;
@@ -159,7 +159,7 @@
         this.curPosition += 1;
         if (this.curPosition === this.imageCount) this.curPosition = 0;
         changeSlide(this.curPosition, this.root);
-      }, 5000);
+      }, 10000);
     }
     stop() {
       if (this.interval !== null) clearInterval(this.interval);
