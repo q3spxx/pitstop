@@ -342,6 +342,7 @@ footer {
   width: 26px;
   height: 26px;
   background-image: url('../images/menu.png');
+  background-repeat: no-repeat;
   cursor: pointer;
   padding-bottom: 4px;
 }
