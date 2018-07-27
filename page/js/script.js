@@ -16,6 +16,18 @@
       };
     });
   });
+
+  let menuToogle = false;
+  const navMenuToogleElem = document.getElementById('nav-menu-toogle');
+  const navMenuElem = document.getElementById('nav-mobile');
+  navMenuToogleElem.addEventListener('click', () => {
+    menuToogle = !menuToogle;
+    if(menuToogle) {
+      navMenuElem.classList.remove('nav_closed');
+    } else {
+      navMenuElem.classList.add('nav_closed');
+    }
+  });
 })();
 (function () {
   let hiding = false;

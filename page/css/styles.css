@@ -1,3 +1,4 @@
+@import './media.css';
 * {
   margin: 0;
   padding: 0;
@@ -59,91 +60,44 @@ footer {
   padding: 63px 0;
 }
 .wrapper {
-  width: 1170px;
   margin: 0 auto;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   padding: 18px 0px;
 }
 .header_left {
   display: flex;
   justify-content: space-between;
-  flex: 0 0 850px;
 }
-.header_left_left {
-
-}
-.header_left_right {
-}
-.logo_wrap {
-  padding: 0px 0px 12px 14px;;
-}
-.logo {
-  display: inline-block;
-  position: relative;
-}
-
-.logo::after {
-  content: '';
-  background-color: rgb(238, 46, 36);
-  position: absolute;
-  left: 100%;
-  margin-left: 3px;
-  top: 14px;
-  width: 529px;
-  height: 6px;
-}
-.logo::before {
-  content: '';
-  background-color: rgb(238, 46, 36);
-  position: absolute;
-  left: 0px;
-  margin-left: -1003px;
-  top: 14px;
-  width: 1000px;
-  height: 6px;
-}
-.nav_top ul {
+.header_right {
   display: flex;
-  list-style-type: none;
+  flex-direction: column;
+}
+.header_top {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
 }
-.nav_top li {
-  display: inline-block;
-  position: relative;
-  font-family: 'AGB';
-  color: white;
-  font-size: 1em;
-  background-color: transparent;
-  padding: 12px 27px;
-  border-radius: 0px 0px 0 0;
-  text-transform: uppercase;
-  transition: color .4s ease, background-color .4s ease;
+.header_mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav_top li::before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 61px;
-  width: 100%;
-  height: 0px;
-  background-color: rgb(238, 46, 36, 0);
-  transition: top .4s ease, height .4s ease, background-color .4s ease;
+.header_right_top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  height: 37px;
 }
-.nav_top li:hover {
-  background-color: white;
-  cursor: pointer;
-  color: black;
-}
-.nav_top li:hover::before {
-  height: 4px;
-  top: 43px;
-  background-color: rgba(238, 46, 36, 1);
+.header_right_bottom {
+  display: flex;
+  justify-content: flex-end;
 }
 .bezier {
-  display: inline-block;
+  position: absolute;
+  left: 800px;
 }
 .bezier_top {
   margin-top: 14px;
@@ -163,46 +117,75 @@ footer {
   border-radius: 0 0 0 80%;
   margin-left: 25px;
 }
-.header_right {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 300px;
+.line::after {
+  content: '';
+  background-color: rgb(238, 46, 36);
+  position: absolute;
+  left: 100%;
+  margin-left: 0px;
+  top: 0px;
+  height: 6px;
 }
-.header_right_top {
+.line::before {
+  content: '';
+  background-color: rgb(238, 46, 36);
+  position: absolute;
+  margin-left: 0px;
+  top: 6px;
+  height: 6px;
+}
+.logo_wrap {
+}
+.logo {
+  display: inline-block;
+  position: relative;
+}
+.logo::after {
+  left: 100%;
+  margin-left: 3px;
+  top: 14px;
+}
+.logo::before {
+  left: 0px;
+  margin-left: -1003px;
+  top: 14px;
+  width: 1000px;
+}
+.social_wrap {
+  position: relative;
+}
+.social_block {
   display: flex;
   justify-content: space-between;
-  padding-top: 0px;
+  width: 112px;
+  padding-bottom: 4px;
 }
-.header_right_bottom {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 28px;
+.social_block::before {
+  top: 10px;
 }
-.social-wrap {
-  display: flex;
-  justify-content: space-between;
+.social_block::after {
+  top: 10px;
 }
 .social {
   padding: 0 6px;
   width: 26px;
   height: 26px;
-  margin-top: 3px;
 }
 .social:hover {
   cursor: pointer;
 }
-.vk {
-  background: url('../images/vk.png') no-repeat;
-}
-.fb {
-  background: url('../images/fb.png') no-repeat;
-}
-.instagram {
-  background: url('../images/instagram.png') no-repeat;
-}
 .profile {
+  display: inline-block;
+  max-width: 165px;
   position: relative;
   flex-direction: column;
+  padding-bottom: 4px;
+}
+.profile::after {
+  top: 13px;
+}
+.profile::before {
+  top: 13px;
 }
 .profile_info {
   display: flex;
@@ -290,45 +273,116 @@ footer {
   color: white;
   padding-left: 10px;
 }
-.phone {
-  font-family: 'AGBE';
-  font-size: 1.2em;
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
+  font-family: 'AGB';
+  color: white;
+  font-size: 1em;
+}
+.mobile {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_mobile {
+  overflow: hidden;
+  text-align: center;
+}
+.nav_mobile ul {
+  height: 264px;
+  padding-bottom: 12px;
+  transition: height 1s ease, padding-bottom 1s ease;
+}
+.nav_closed ul {
+  height: 0px;
+  padding-bottom: 0px;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.nav_mobile ul {
+  flex-direction: column;
+}
+.nav li {
+  display: inline-block;
+  position: relative;
+  font-family: 'AGB';
+  color: white;
+  font-size: 1em;
+  background-color: transparent;
+  border-radius: 0px 0px 0 0;
+  text-transform: uppercase;
+  transition: color .4s ease, background-color .4s ease;
+}
+.nav li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 61px;
+  width: 100%;
+  height: 0px;
+  background-color: rgb(238, 46, 36, 0);
+  transition: top .4s ease, height .4s ease, background-color .4s ease;
+}
+.nav li:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.nav li:hover::before {
+  height: 4px;
+  top: 43px;
+  background-color: rgba(238, 46, 36, 1);
+}
+.nav_icon {
+  width: 26px;
+  height: 26px;
+  background-image: url('../images/menu.png');
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+.phone {
+  position: relative;
 }
 .phone span::before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -5px;
   left: -32px;
   background-image: url(../images/phone.png);
   width: 26px;
   height: 26px;
 }
-.line_right {
-  display: inline-block;
-  position: relative;
+.phone a {
+  font-family: 'AGBE';
+  font-size: .82em;
+  color: white;
+  text-decoration: none;
+}
+.phone_main {
+  float: right;
+}
+.phone_main::after {
+  top: 8px;
+  margin-left: 3px;
+}
+.phone_main::before {
+  top: 8px;
+}
+.vk {
+  background: url('../images/vk.png') no-repeat;
+}
+.fb {
+  background: url('../images/fb.png') no-repeat;
+}
+.instagram {
+  background: url('../images/instagram.png') no-repeat;
 }
 
-.line_right::after {
-  content: '';
-  background-color: rgb(238, 46, 36);
-  position: absolute;
-  left: 100%;
-  margin-left: 3px;
-  top: 10px;
-  width: 1000px;
-  height: 6px;
-}
-.line_right::before {
-  content: '';
-  background-color: rgb(238, 46, 36);
-  position: absolute;
-  left: -84px;
-  margin-left: -3px;
-  top: 10px;
-  width: 53px;
-  height: 6px;
-}
 
 .offer_blocks {
   display: flex;
