@@ -364,6 +364,7 @@ footer {
   top: -5px;
   left: -32px;
   background-image: url(../images/phone.png);
+  background-repeat: no-repeat;
   width: 26px;
   height: 26px;
 }
