@@ -40,8 +40,8 @@
     display: inline-block;
   }
   .phone_main::before {
-    left: -155px;
-    width: 120px;
+    left: -147px;
+    width: 114px;
   }
   .phone_main::after {
     width: 1000px;

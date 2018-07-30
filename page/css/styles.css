@@ -96,7 +96,11 @@ footer {
 }
 .bezier {
   position: absolute;
-  left: 800px;
+  left: 808px;
+  top: 32px;
+}
+.bezier img {
+  width: 48px;
 }
 .bezier_top {
   margin-top: 14px;
@@ -373,11 +377,11 @@ footer {
   float: right;
 }
 .phone_main::after {
-  top: 8px;
+  top: 9px;
   margin-left: 3px;
 }
 .phone_main::before {
-  top: 8px;
+  top: 9px;
 }
 .vk {
   background: url('../images/vk.png') no-repeat;
