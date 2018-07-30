@@ -139,6 +139,9 @@ footer {
   display: inline-block;
   position: relative;
 }
+.logo img {
+  width: 256px;
+}
 .logo::after {
   left: 100%;
   margin-left: 3px;
