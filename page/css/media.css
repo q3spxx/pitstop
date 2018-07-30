@@ -167,7 +167,7 @@
     flex: 0 0 0px;
   }
   .logo::after {
-    width: 20px;
+    width: 11px;
   }
   .social_main {
     display: none;
@@ -196,14 +196,14 @@
   }
   .mobile {
     display: flex;
-    flex: 0 0 160px;
+    flex: 0 0 152px;
   }
   .profile::after {
     width: 1000px;
   }
   .profile::before {
-    width: 20px;
-    left: -20px;
+    width: 12px;
+    left: -12px;
   }
   .profile_name {
     display: none;

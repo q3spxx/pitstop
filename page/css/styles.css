@@ -64,7 +64,7 @@ footer {
 }
 .header {
   position: relative;
-  padding: 18px 0px;
+  padding: 18px 8px;
 }
 .header_left {
   display: flex;
@@ -77,7 +77,6 @@ footer {
 .header_top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 13px;
 }
 .header_mid {
@@ -151,6 +150,9 @@ footer {
   top: 14px;
   width: 1000px;
 }
+.social_main {
+  margin-top: 4px;
+}
 .social_wrap {
   position: relative;
 }
@@ -182,10 +184,10 @@ footer {
   padding-bottom: 4px;
 }
 .profile::after {
-  top: 13px;
+  top: 14px;
 }
 .profile::before {
-  top: 13px;
+  top: 14px;
 }
 .profile_info {
   display: flex;
@@ -607,7 +609,7 @@ footer {
   background-image: url('../images/bg3.jpg');
 }
 .bg_slider {
-  background-image: url('../images/bg2.jpg');
+  background-image: url('../images/bg8.jpg');
 }
 .bg_gallery {
   background-image: url('../images/bg4.jpg');
