@@ -265,3 +265,6 @@
     background-color: rgba(238, 46, 36, 1);
     border-radius: 50%;
   }
+  .p_menu-detail_text span {
+    color: rgba(238, 46, 36, 1);
+  }
