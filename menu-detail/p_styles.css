@@ -258,10 +258,10 @@
   .p_menu-detail_text li::before {
     content: '';
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: -20px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: rgba(238, 46, 36, 1);
     border-radius: 50%;
   }
