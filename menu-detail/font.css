@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'AGBE';
+  src: url(fonts/AkzidenzGroteskPro-BoldEx.ttf);
+}
+@font-face {
+  font-family: 'AGB';
+  src: url(fonts/AkzidenzGroteskPro-Bold.ttf);
+}
+@font-face {
+  font-family: 'AGR';
+  src: url(fonts/AkzidenzGroteskPro-Regular.ttf);
+}
+@font-face {
+  font-family: 'AGL';
+  src: url(fonts/AkzidenzGroteskPro-Light.ttf);
+}

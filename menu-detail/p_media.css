@@ -1,0 +1,244 @@
+@media only screen and (min-width: 1170px) {
+    .p_wrapper {
+      width: 1170px;
+    }
+    .p_bezier {
+      display: inline-block;
+    }
+    .p_logo_wrap {
+      flex: 0 0 850px;
+    }
+    .p_logo::after {
+      width: 541px;
+    }
+    .p_social_main {
+      display: inline-flex;
+    }
+    .p_social_block::after {
+      width: 0px;
+    }
+    .p_social_block::before {
+      width: 0px;
+      left: 0px;
+    }
+    .p_nav a {
+      padding: 12px 27px;
+    }
+    .p_nav_icon {
+      display: none;
+    }
+    .p_nav_mobile {
+      display: none;
+    }
+    .p_nav_menu {
+      display: block;
+    }
+    .p_mobile {
+      display: none;
+    }
+    .p_phone_main {
+      display: inline-block;
+    }
+    .p_phone_main::before {
+      left: -147px;
+      width: 114px;
+    }
+    .p_phone_main::after {
+      width: 1000px;
+    }
+    .p_profile::after {
+      width: 0px;
+    }
+    .p_profile::before {
+      width: 0px;
+    }
+    .p_profile_auth {
+      width: 110px;
+    }
+    .p_menu-detail_img {
+      flex: 0 0 585px;
+    }
+    .p_menu-detail_img {
+      flex: 0 0 585px;
+    }
+  }
+  @media only screen and (max-width: 1169px) {
+    .p_wrapper {
+      width: 768px;
+    }
+    .p_bezier {
+      display: none;
+    }
+    .p_logo_wrap {
+      flex: 0 0 360px;
+    }
+    .p_logo::after {
+      width: 100px;
+    }
+    .p_social_main {
+      display: inline-flex;
+    }
+    .p_social_block::after {
+      width: 46px;
+    }
+    .p_social_block::before {
+      width: 89px;
+      left: -100px;
+    }
+    .p_nav a {
+      padding: 12px 8px;
+    }
+    .p_nav_icon {
+      display: none;
+    }
+    .p_nav_mobile {
+      display: none;
+    }
+    .p_nav_menu {
+      display: block;
+    }
+    .p_phone_main {
+      display: inline-block;
+    }
+    .p_phone_main::before {
+      left: 0px;
+      width: 0px;
+    }
+    .p_mobile {
+      display: none;
+    }
+    .p_profile::after {
+      width: 1000px;
+    }
+    .p_profile::before {
+      width: 50px;
+      left: -50px;
+    }
+    .p_profile_auth {
+      width: 110px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .p_wrapper {
+      width: 480px;
+    }
+    .p_bezier {
+      display: none;
+    }
+    .p_header_mid {
+      margin-bottom: 13px;
+    }
+    .p_logo_wrap {
+      flex: 0 0 0px;
+    }
+    .p_logo::after {
+      width: 50px;
+    }
+    .p_social_main {
+      display: none;
+    }
+    .p_social_block::after {
+      width: 0px;
+    }
+    .p_social_block::before {
+      width: 0px;
+      left: 0px;
+    }
+    .p_nav a {
+      padding: 12px 27px;
+    }
+    .p_nav_icon {
+      display: block;
+    }
+    .p_nav_mobile {
+      display: block;
+    }
+    .p_nav_menu {
+      display: none;
+    }
+    .p_phone_main {
+      display: inline-block;
+    }
+    .p_phone_main::before {
+      left: 0px;
+      width: 0px;
+    }
+    .p_mobile {
+      display: flex;
+      flex: 0 0 220px;
+    }
+    .p_profile::after {
+      width: 1000px;
+    }
+    .p_profile::before {
+      width: 50px;
+      left: -50px;
+    }
+    .p_profile_auth {
+      width: 110px;
+    }
+  }
+  @media only screen and (max-width: 479px) {
+    .p_wrapper {
+      width: 360px;
+    }
+    .p_bezier {
+      display: none;
+    }
+    .p_header_mid {
+      margin-bottom: 13px;
+    }
+    .p_logo_wrap {
+      flex: 0 0 0px;
+    }
+    .p_logo::after {
+      width: 11px;
+    }
+    .p_social_main {
+      display: none;
+    }
+    .p_social_block::after {
+      width: 0px;
+    }
+    .p_social_block::before {
+      width: 0px;
+      left: 0px;
+    }
+    .p_nav a {
+      padding: 12px 27px;
+    }
+    .p_nav_icon {
+      display: block;
+    }
+    .p_nav_mobile {
+      display: block;
+    }
+    .p_nav_menu {
+      display: none;
+    }
+    .p_phone_main {
+      display: inline-block;
+    }
+    .p_phone_main::before {
+      left: 0px;
+      width: 0px;
+    }
+    .p_mobile {
+      display: flex;
+      flex: 0 0 152px;
+    }
+    .p_profile::after {
+      width: 1000px;
+    }
+    .p_profile::before {
+      width: 12px;
+      left: -12px;
+    }
+    .p_profile_name {
+      display: none;
+    }
+    .p_profile_auth {
+      width: 65px;
+    }
+  }
+  

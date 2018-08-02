@@ -18,6 +18,9 @@
     width: 0px;
     left: 0px;
   }
+  .profile_auth {
+    width: 110px;
+  }
   .nav li {
     padding: 12px 27px;
   }
@@ -73,6 +76,9 @@
     width: 89px;
     left: -100px;
   }
+  .profile_auth {
+    width: 110px;
+  }
   .nav li {
     padding: 12px 8px;
   }
@@ -118,6 +124,9 @@
   }
   .logo::after {
     width: 50px;
+  }
+  .profile_auth {
+    width: 110px;
   }
   .social_main {
     display: none;
@@ -168,6 +177,9 @@
   }
   .logo::after {
     width: 11px;
+  }
+  .profile_auth {
+    width: 65px;
   }
   .social_main {
     display: none;
