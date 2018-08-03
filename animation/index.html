@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+    }
+    section {
+        width: 1170px;
+        height: 600px;
+        background-color: #888;
+    }
+    .grains_block {
+        width: 300px;
+        height: 60px;
+    }
+    .grains {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transition: left .5s ease-out, top .5s ease-out;
+    }
+    .grains_reverse {
+        transform: rotate(180deg);
+    }
+    .grains1 {
+        margin-top: 100px;
+        margin-left: 700px;
+    }
+    .grains2 {
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+</style>
+<body>
+    <div id="body">
+        <div class="grains_block">
+            <img class="grains grains1 grains_reverse" src="images/grains.png" alt="">
+            <img class="grains grains2" src="images/grains.png" alt="">
+        </div>
+    </div>
+    <script>
+        (function() {
+            const grains = document.getElementsByClassName('grains');
+            const center = {
+                x: window.outerWidth / 2,
+                y: window.outerHeight / 2
+            }
+            for (let i = 0; i < grains.length; i++) {
+                document.addEventListener('mousemove', (e) => {
+                    grains[i].style.left = ((e.x - center.x)/center.x * -50) + 'px';
+                    grains[i].style.top = ((e.y - center.y)/center.y * -30) + 'px';
+                });
+            }
+        })()
+    </script>
+</body>
+</html>

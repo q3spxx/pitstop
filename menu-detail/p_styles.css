@@ -233,8 +233,11 @@
   .p_bg {
     background-color: black;
   }
-  .p_menu-detail_description {
+  .p_menu-detail {
     display: flex;
+  }
+  .p_menu-detail_block {
+    padding: 12px;
   }
   .p_menu-detail_img {
     text-align: center;

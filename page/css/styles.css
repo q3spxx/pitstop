@@ -1,4 +1,3 @@
-@import './media.css';
 * {
   margin: 0;
   padding: 0;
@@ -409,6 +408,7 @@ footer {
   padding-bottom: 4px;
 }
 .phone {
+  display: inline-block;
   position: relative;
 }
 .phone span::before {
@@ -447,13 +447,17 @@ footer {
   background: url('../images/instagram.png') no-repeat;
 }
 
-
+.offer_container {
+  display: flex;
+  justify-content: space-between;
+}
 .offer_blocks {
   display: flex;
   justify-content: space-between;
 }
 .offer_block {
   display: flex;
+  align-items: center;
 }
 .offer_block a {
   text-decoration: none;
@@ -484,15 +488,14 @@ footer {
   text-align: center;
   color: white;
 }
-.offer_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .offer_text_main {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  flex: 0 0 100%;
 }
-.offer_text_adv {
+.offer_text {
   font-family: 'AGBE';
   font-size: 1.72em;
   text-align: center;
@@ -675,6 +678,9 @@ footer {
 .bg_gallery {
   background-image: url('../images/bg4.jpg');
 }
+.bg_footer {
+  background-color: black;
+}
 .fc_header {
   color: white;
 }
@@ -756,11 +762,37 @@ footer {
   text-align: center;
 }
 .footer {
+  display: flex;
+  flex-direction: column;
   padding: 18px 0;
 }
+.f_top {
+  margin-bottom: 24px;
+}
+.f_bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.f_left {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.f_right {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+.f_logo::after {
+  width: 10000px !important;
+}
 .f_phone {
-  text-align: center;
-  color: black;
+  text-align: right;
+  color: white;
+}
+.f_counters {
+  margin-top: 12px;
 }
 .copyright {
 }
@@ -772,7 +804,7 @@ footer {
 }
 .copyright span {
   font-family: 'AGB';
-  color: black;
+  color: white;
 }
 .studio {
 }
@@ -807,7 +839,6 @@ footer {
 }
 .f_content {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 21px;
 }
@@ -845,4 +876,9 @@ footer {
 .gallery_list_image_hover:hover {
   opacity: 1;
   cursor: pointer;
+}
+.f_social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
