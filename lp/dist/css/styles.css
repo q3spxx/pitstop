@@ -219,32 +219,32 @@ header .header .right .phone .number::before {
   background-repeat: no-repeat;
 }
 
-.screen.main h3 {
+.screen-main h3 {
   color: #FFFFFF;
   font-family: "AGR";
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 42px;
 }
-.screen.main h3 span {
+.screen-main h3 span {
   font-family: "AGB";
   color: #CC342C;
 }
-.screen.main h1 {
+.screen-main h1 {
   font-size: 36px;
   line-height: 40px;
   color: #FFFFFF;
   font-family: "AGB";
   margin-bottom: 56px;
 }
-.screen.main h1 span {
+.screen-main h1 span {
   color: #DD1629;
 }
-.screen.main .advantages .tabs {
+.screen-main .advantages .tabs {
   display: flex;
   justify-content: space-between;
 }
-.screen.main .advantages .tabs .tab {
+.screen-main .advantages .tabs .tab {
   display: flex;
   justify-content: center;
   border-bottom: 6px solid #DD1629;
@@ -253,17 +253,17 @@ header .header .right .phone .number::before {
   box-sizing: border-box;
   border-radius: 18px 18px 0 0;
 }
-.screen.main .advantages .tabs .tab p {
+.screen-main .advantages .tabs .tab p {
   position: relative;
   color: #FFFFFF;
   font-family: "AGB";
   font-size: 26px;
   line-height: 28px;
 }
-.screen.main .advantages .tabs .tab p span {
+.screen-main .advantages .tabs .tab p span {
   color: #CC342C;
 }
-.screen.main .advantages .tabs .tab p::before {
+.screen-main .advantages .tabs .tab p::before {
   content: "";
   position: absolute;
   width: 46px;
@@ -272,7 +272,7 @@ header .header .right .phone .number::before {
   top: 8px;
   background-repeat: no-repeat;
 }
-.screen.main .advantages .tabs .tab:hover {
+.screen-main .advantages .tabs .tab:hover {
   cursor: pointer;
   border-bottom: none;
   border-top: 6px solid #DD1629;
@@ -281,20 +281,20 @@ header .header .right .phone .number::before {
   padding: 10px 0 10px 33px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.screen.main .advantages .tabs .accounting p::before {
+.screen-main .advantages .tabs .accounting p::before {
   background-image: url("../images/ruble.png");
 }
-.screen.main .advantages .tabs .ruble p::before {
+.screen-main .advantages .tabs .ruble p::before {
   background-image: url("../images/accounting.png");
 }
-.screen.main .advantages .tabs .wallet p::before {
+.screen-main .advantages .tabs .wallet p::before {
   top: 4px;
   background-image: url("../images/wallet.png");
 }
-.screen.main .advantages .container {
+.screen-main .advantages .container {
   height: 186px;
 }
-.screen.main .advantages .container .content {
+.screen-main .advantages .container .content {
   font-family: "AGR";
   font-weight: 200;
   color: #FFFFFF;
@@ -303,30 +303,30 @@ header .header .right .phone .number::before {
   line-height: 24px;
   padding: 20px;
 }
-.screen.main .advantages .container .content span {
+.screen-main .advantages .container .content span {
   color: #CC342C;
 }
-.screen.main .ui {
+.screen-main .ui {
   text-align: center;
 }
 
-.screen .grid {
+.screen-concept .grid {
   display: flex;
   flex-wrap: wrap;
   height: 446px;
   align-content: space-between;
 }
-.screen .grid .card {
+.screen-concept .grid .card {
   text-align: center;
   width: 400px;
   box-sizing: border-box;
   padding: 0 30px;
 }
-.screen .grid .card .image {
+.screen-concept .grid .card .image {
   height: 92px;
   margin-bottom: 32px;
 }
-.screen .grid .card p {
+.screen-concept .grid .card p {
   font-family: "AGR";
   font-weight: 200;
   font-size: 21px;
@@ -350,6 +350,28 @@ header .header .right .phone .number::before {
 .partner .ui {
   text-align: center;
   margin-bottom: 126px;
+}
+
+.screen-support .grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 930px;
+  align-content: space-between;
+}
+.screen-support .grid .card {
+  text-align: center;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.screen-support .grid .card .image {
+  height: 92px;
+  margin-bottom: 32px;
+}
+.screen-support .grid .card p {
+  font-family: "AGR";
+  font-weight: 200;
+  font-size: 21px;
 }
 
 /*# sourceMappingURL=styles.css.map */
