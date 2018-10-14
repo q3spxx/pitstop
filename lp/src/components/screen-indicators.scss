@@ -1,0 +1,30 @@
+.screen-indicators {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-bottom: 30px;
+        .card {
+            text-align: left;
+            width: 400px;
+            h4 {
+                font-family: $AGB;
+                font-size: 21px;
+                color: $color-red-2;
+                margin-bottom: 22px;
+            }
+            .image {
+                height: 92px;
+                margin-bottom: 32px;
+            }
+            p {
+                span {
+                    font-family: $AGR;
+                    font-weight: 200;
+                    font-size: 14px;
+                    margin-left: 65px;
+                }
+            }
+        }
+    }
+}

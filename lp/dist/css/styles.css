@@ -374,4 +374,31 @@ header .header .right .phone .number::before {
   font-size: 21px;
 }
 
+.screen-indicators .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 30px;
+}
+.screen-indicators .grid .card {
+  text-align: left;
+  width: 400px;
+}
+.screen-indicators .grid .card h4 {
+  font-family: "AGB";
+  font-size: 21px;
+  color: #DD1629;
+  margin-bottom: 22px;
+}
+.screen-indicators .grid .card .image {
+  height: 92px;
+  margin-bottom: 32px;
+}
+.screen-indicators .grid .card p span {
+  font-family: "AGR";
+  font-weight: 200;
+  font-size: 14px;
+  margin-left: 65px;
+}
+
 /*# sourceMappingURL=styles.css.map */
