@@ -1,0 +1,92 @@
+.bg-formats {
+    background-image: url('../images/formats/bg-formats.jpg');
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+.screen-formats {
+    h2 {
+        color: $color-white;
+        margin-bottom: 57px;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 7px;
+        .card {
+            position: relative;
+            width: 600px;
+            p {
+                text-align: left;
+                font-family: $AGB;
+                font-size: 20px;
+                color: $color-white;
+            }
+            .group {
+                display: flex;
+            }
+            &.cofe-point {
+                .image {
+                    position: absolute;
+                    width: 499px;
+                    height: 381px;
+                    background-image: url('../images/formats/cofe-point.png');
+                    background-repeat: no-repeat;
+                }
+                .ad {
+                    padding-left: 230px;
+                    margin-top: 30px;
+                }
+                .software {
+                    margin-top: 97px;
+                }
+                .constructions {
+                    margin-top: 66px;
+                }
+                .coffee-machine {
+                    display: inline-block;
+                    margin-top: 56px;
+                    padding-left: 137px;
+                }
+                .windows {
+                    display: inline-block;
+                    margin-top: 56px;
+                    padding-left: 29px;
+                }
+            }
+            &.express-cafe {
+                .image {
+                    position: absolute;
+                    width: 496px;
+                    height: 417px;
+                    background-image: url('../images/formats/express-cafe.png');
+                    background-repeat: no-repeat;
+                    margin-left: 104px;
+                }
+                .ad {
+                    padding-left: 315px;
+                    margin-top: 41px;
+                }
+                .software {
+                    margin-top: 110px;
+                    padding-left: 126px;
+                }
+                .constructions {
+                    margin-top: 55px;
+                    padding-left: 131px;
+                }
+                .coffee-machine {
+                    display: inline-block;
+                    margin-top: 78px;
+                    padding-left: 215px;
+                }
+                .windows {
+                    display: inline-block;
+                    margin-top: 78px;
+                    padding-left: 43px;
+                }
+            }
+        }
+    }
+}

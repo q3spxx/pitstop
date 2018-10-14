@@ -2,11 +2,11 @@
     .grid {
         display: flex;
         flex-wrap: wrap;
-        align-content: space-between;
+        justify-content: space-between;
         margin-bottom: 30px;
         .card {
             text-align: left;
-            width: 400px;
+            width: 362px;
             h4 {
                 font-family: $AGB;
                 font-size: 21px;

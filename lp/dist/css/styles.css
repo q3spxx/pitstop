@@ -81,7 +81,7 @@ ul {
 }
 
 .screen {
-  padding: 64px 0;
+  padding: 44px 0;
 }
 
 .button {
@@ -308,6 +308,7 @@ header .header .right .phone .number::before {
 }
 .screen-main .ui {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .screen-concept .grid {
@@ -344,12 +345,12 @@ header .header .right .phone .number::before {
   color: #FFFFFF;
   text-align: center;
   line-height: 86px;
-  margin-top: 146px;
+  margin-top: 160px;
   margin-bottom: 40px;
 }
 .partner .ui {
   text-align: center;
-  margin-bottom: 126px;
+  margin-bottom: 161px;
 }
 
 .screen-support .grid {
@@ -377,12 +378,12 @@ header .header .right .phone .number::before {
 .screen-indicators .grid {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .screen-indicators .grid .card {
   text-align: left;
-  width: 400px;
+  width: 362px;
 }
 .screen-indicators .grid .card h4 {
   font-family: "AGB";
@@ -399,6 +400,93 @@ header .header .right .phone .number::before {
   font-weight: 200;
   font-size: 14px;
   margin-left: 65px;
+}
+
+.bg-formats {
+  background-image: url("../images/formats/bg-formats.jpg");
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+}
+
+.screen-formats h2 {
+  color: #FFFFFF;
+  margin-bottom: 57px;
+}
+.screen-formats .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.screen-formats .grid .card {
+  position: relative;
+  width: 600px;
+}
+.screen-formats .grid .card p {
+  text-align: left;
+  font-family: "AGB";
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.screen-formats .grid .card .group {
+  display: flex;
+}
+.screen-formats .grid .card.cofe-point .image {
+  position: absolute;
+  width: 499px;
+  height: 381px;
+  background-image: url("../images/formats/cofe-point.png");
+  background-repeat: no-repeat;
+}
+.screen-formats .grid .card.cofe-point .ad {
+  padding-left: 230px;
+  margin-top: 30px;
+}
+.screen-formats .grid .card.cofe-point .software {
+  margin-top: 97px;
+}
+.screen-formats .grid .card.cofe-point .constructions {
+  margin-top: 66px;
+}
+.screen-formats .grid .card.cofe-point .coffee-machine {
+  display: inline-block;
+  margin-top: 56px;
+  padding-left: 137px;
+}
+.screen-formats .grid .card.cofe-point .windows {
+  display: inline-block;
+  margin-top: 56px;
+  padding-left: 29px;
+}
+.screen-formats .grid .card.express-cafe .image {
+  position: absolute;
+  width: 496px;
+  height: 417px;
+  background-image: url("../images/formats/express-cafe.png");
+  background-repeat: no-repeat;
+  margin-left: 104px;
+}
+.screen-formats .grid .card.express-cafe .ad {
+  padding-left: 315px;
+  margin-top: 41px;
+}
+.screen-formats .grid .card.express-cafe .software {
+  margin-top: 110px;
+  padding-left: 126px;
+}
+.screen-formats .grid .card.express-cafe .constructions {
+  margin-top: 55px;
+  padding-left: 131px;
+}
+.screen-formats .grid .card.express-cafe .coffee-machine {
+  display: inline-block;
+  margin-top: 78px;
+  padding-left: 215px;
+}
+.screen-formats .grid .card.express-cafe .windows {
+  display: inline-block;
+  margin-top: 78px;
+  padding-left: 43px;
 }
 
 /*# sourceMappingURL=styles.css.map */
