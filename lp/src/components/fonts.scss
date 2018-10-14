@@ -1,6 +1,7 @@
 $AGB: 'AGB';
 $AGR: 'AGR';
 $AGBE: 'AGBE';
+$AGS: 'AGS';
 
 @font-face {
     font-family: 'AGB';
@@ -13,4 +14,8 @@ $AGBE: 'AGBE';
 @font-face {
     font-family: 'AGBE';
     src: url('../fonts/AkzidenzGroteskPro-BoldEx.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AGS';
+    src: url('../fonts/AkzidenzGroteskPro-Super.ttf') format('truetype');
 }

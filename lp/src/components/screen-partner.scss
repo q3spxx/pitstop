@@ -1,0 +1,23 @@
+@import "./palette.scss";
+
+.bg-partner {
+    background-image: url('../images/screen-partner.jpg');
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+.partner {
+    h3 {
+        font-family: $AGS;
+        font-size: 72px;
+        color: $color-white;
+        text-align: center;
+        line-height: 86px;
+        margin-top: 146px;
+        margin-bottom: 40px;
+    }
+    .ui {
+        text-align: center;
+        margin-bottom: 126px;
+    }
+}

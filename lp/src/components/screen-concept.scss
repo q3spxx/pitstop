@@ -1,0 +1,23 @@
+.screen {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        height: 446px;
+        align-content: space-between;
+        .card {
+            text-align: center;
+            width: 400px;
+            box-sizing: border-box;
+            padding: 0 30px;
+            .image {
+                height: 92px;
+                margin-bottom: 32px;
+            }
+            p {
+                font-family: $AGR;
+                font-weight: 200;
+                font-size: 21px;
+            }
+        }
+    }
+}

@@ -9,6 +9,51 @@ body {
     overflow-x: hidden;
 }
 
+.line {
+    &::after {
+        content: '';
+        background-color: $color-red;
+        position: absolute;
+        left: 100%;
+        margin-left: 0px;
+        top: 0px;
+        height: 7px;
+    }
+    &::before {
+        content: '';
+        background-color: $color-red;
+        position: absolute;
+        margin-left: 0px;
+        top: 6px;
+        height: 7px;
+    }
+}
+
+h2 {
+    display: inline-block;
+    font-family: $AGB;
+    font-size: 48px;
+    position: relative;
+    margin-bottom: 64px;
+    &::before {
+        top: 32px !important;
+        height: 6px !important;
+        width: 5000px;
+        left: -5000px;
+        margin-left: -12px !important;
+    }
+    &::after {
+        top: 32px !important;
+        height: 6px !important;
+        width: 5000px;
+        margin-left: 12px !important;
+    }
+}
+
+.subheader {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
 }
@@ -71,22 +116,3 @@ ul {
     }
 }
 
-.line {
-    &::after {
-        content: '';
-        background-color: $color-red;
-        position: absolute;
-        left: 100%;
-        margin-left: 0px;
-        top: 0px;
-        height: 7px;
-    }
-    &::before {
-        content: '';
-        background-color: $color-red;
-        position: absolute;
-        margin-left: 0px;
-        top: 6px;
-        height: 7px;
-    }
-}

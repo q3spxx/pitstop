@@ -10,6 +10,10 @@
   font-family: "AGBE";
   src: url("../fonts/AkzidenzGroteskPro-BoldEx.ttf") format("truetype");
 }
+@font-face {
+  font-family: "AGS";
+  src: url("../fonts/AkzidenzGroteskPro-Super.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +21,49 @@
 
 body {
   overflow-x: hidden;
+}
+
+.line::after {
+  content: "";
+  background-color: #CC342C;
+  position: absolute;
+  left: 100%;
+  margin-left: 0px;
+  top: 0px;
+  height: 7px;
+}
+.line::before {
+  content: "";
+  background-color: #CC342C;
+  position: absolute;
+  margin-left: 0px;
+  top: 6px;
+  height: 7px;
+}
+
+h2 {
+  display: inline-block;
+  font-family: "AGB";
+  font-size: 48px;
+  position: relative;
+  margin-bottom: 64px;
+}
+h2::before {
+  top: 32px !important;
+  height: 6px !important;
+  width: 5000px;
+  left: -5000px;
+  margin-left: -12px !important;
+}
+h2::after {
+  top: 32px !important;
+  height: 6px !important;
+  width: 5000px;
+  margin-left: 12px !important;
+}
+
+.subheader {
+  text-align: center;
 }
 
 ul {
@@ -79,24 +126,6 @@ ul {
 }
 .button:hover::before {
   width: 12px;
-}
-
-.line::after {
-  content: "";
-  background-color: #CC342C;
-  position: absolute;
-  left: 100%;
-  margin-left: 0px;
-  top: 0px;
-  height: 7px;
-}
-.line::before {
-  content: "";
-  background-color: #CC342C;
-  position: absolute;
-  margin-left: 0px;
-  top: 6px;
-  height: 7px;
 }
 
 header {
@@ -184,8 +213,10 @@ header .header .right .phone .number::before {
   background-size: cover;
 }
 
-.bg.main {
+.bg-main {
   background-image: url("../images/screen-main.jpg");
+  background-position-y: -114px;
+  background-repeat: no-repeat;
 }
 
 .screen.main h3 {
@@ -277,6 +308,48 @@ header .header .right .phone .number::before {
 }
 .screen.main .ui {
   text-align: center;
+}
+
+.screen .grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 446px;
+  align-content: space-between;
+}
+.screen .grid .card {
+  text-align: center;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.screen .grid .card .image {
+  height: 92px;
+  margin-bottom: 32px;
+}
+.screen .grid .card p {
+  font-family: "AGR";
+  font-weight: 200;
+  font-size: 21px;
+}
+
+.bg-partner {
+  background-image: url("../images/screen-partner.jpg");
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+}
+
+.partner h3 {
+  font-family: "AGS";
+  font-size: 72px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 86px;
+  margin-top: 146px;
+  margin-bottom: 40px;
+}
+.partner .ui {
+  text-align: center;
+  margin-bottom: 126px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,10 @@
 @import "./palette.scss";
 
 
-.bg {
-    &.main {
-        background-image: url('../images/screen-main.jpg');
-    }
+.bg-main {
+    background-image: url('../images/screen-main.jpg');
+    background-position-y: -114px;
+    background-repeat: no-repeat;
 }
 
 .screen {
