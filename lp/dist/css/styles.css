@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .line::after {
   content: "";
   background-color: #CC342C;
