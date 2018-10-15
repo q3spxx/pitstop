@@ -516,7 +516,7 @@ header .header .right .phone .number::before {
   font-family: "AGB";
   background-color: #000000;
   top: -21px;
-  left: 24px;
+  left: 22px;
   padding: 0 10px;
 }
 .screen-contacts .grid .info .contacts .name {
@@ -570,6 +570,26 @@ header .header .right .phone .number::before {
 .screen-contacts .grid .photo {
   width: 800px;
   text-align: right;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  padding-bottom: 16px;
+}
+footer .policy {
+  font-family: "AGR";
+  font-weight: 200;
+  color: #343434;
+  font-size: 21px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+footer .copyright {
+  font-family: "AGR";
+  font-weight: 200;
+  color: #FFFFFF;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
