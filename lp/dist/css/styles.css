@@ -21,10 +21,12 @@
 
 body {
   overflow-x: hidden;
+  background-color: #FFFFFF;
 }
 
 a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 .line::after {

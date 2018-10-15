@@ -7,10 +7,12 @@
 
 body {
     overflow-x: hidden;
+    background-color: $color-white;
 }
 
 a {
     text-decoration: none;
+    color: $color-white;
 }
 
 .line {
