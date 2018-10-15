@@ -60,7 +60,7 @@
                         background-repeat: no-repeat;
                     }
                 }
-                &:hover {
+                &.active {
                     cursor: pointer;
                     border-bottom: none;
                     border-top: 6px solid $color-red-2;

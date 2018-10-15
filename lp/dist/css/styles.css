@@ -278,7 +278,7 @@ header .header .right .phone .number::before {
   top: 8px;
   background-repeat: no-repeat;
 }
-.screen-main .advantages .tabs .tab:hover {
+.screen-main .advantages .tabs .tab.active {
   cursor: pointer;
   border-bottom: none;
   border-top: 6px solid #DD1629;
