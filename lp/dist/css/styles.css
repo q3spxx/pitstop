@@ -584,12 +584,14 @@ footer {
   padding-bottom: 16px;
 }
 footer .policy {
+  margin-bottom: 10px;
+}
+footer .policy a {
   font-family: "AGR";
   font-weight: 200;
   color: #343434;
   font-size: 21px;
   text-decoration: underline;
-  margin-bottom: 10px;
 }
 footer .copyright {
   font-family: "AGR";

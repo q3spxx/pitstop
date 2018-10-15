@@ -3,12 +3,14 @@ footer {
     background-color: $color-black;
     padding-bottom: 16px;
     .policy {
-        font-family: $AGR;
-        font-weight: 200;
-        color: $color-grey;
-        font-size: 21px;
-        text-decoration: underline;
         margin-bottom: 10px;
+        a {
+            font-family: $AGR;
+            font-weight: 200;
+            color: $color-grey;
+            font-size: 21px;
+            text-decoration: underline;
+        }
     }
     .copyright {
         font-family: $AGR;
