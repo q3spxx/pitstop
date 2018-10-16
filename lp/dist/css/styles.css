@@ -30,8 +30,8 @@ a {
 }
 
 iframe {
-  height: 266px;
-  margin: 0;
+  margin: 0 !important;
+  max-height: 266px;
 }
 
 .line::after {
