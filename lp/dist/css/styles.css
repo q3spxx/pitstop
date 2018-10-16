@@ -29,6 +29,11 @@ a {
   color: #FFFFFF;
 }
 
+iframe {
+  height: 266px;
+  margin: 0;
+}
+
 .line::after {
   content: "";
   background-color: #CC342C;
@@ -572,6 +577,12 @@ header .header .right .phone .number::before {
   top: 5px;
   left: -45px;
   background-image: url("../images/contacts/mail.png");
+}
+.screen-contacts .grid .info .form {
+  padding: 7px;
+  border: 5px solid #DD1629;
+  border-radius: 8px;
+  margin-top: 6px;
 }
 .screen-contacts .grid .photo {
   width: 800px;

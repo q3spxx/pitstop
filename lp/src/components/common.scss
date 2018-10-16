@@ -15,6 +15,11 @@ a {
     color: $color-white;
 }
 
+iframe {
+    height: 266px;
+    margin: 0;
+}
+
 .line {
     &::after {
         content: '';

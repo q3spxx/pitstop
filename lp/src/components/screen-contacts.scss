@@ -75,6 +75,12 @@
                     }
                 }
             }
+            .form {
+                padding: 7px;
+                border: 5px solid $color-red-2;
+                border-radius: 8px;
+                margin-top: 6px;
+            }
         }
         .photo {
             width: 800px;
