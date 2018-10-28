@@ -7,84 +7,102 @@
         color: $color-white;    
     }
     .grid {
-        display: flex;
-        .info {
-            width: 400px;
-            padding: 0 30px;
-            .contacts {
-                position: relative;
-                border: 5px solid $color-red-2;
-                border-radius: 8px;
-                .title {
-                    position: absolute;
+        display: grid;
+        grid-template-columns: 410px 730px;
+        grid-template-rows: 170px 291px;
+        .contacts {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            position: relative;
+            border: 5px solid $color-red-2;
+            border-radius: 8px;
+            width: 380px;
+            padding: 0px 30px;
+            box-sizing: border-box;
+            .title {
+                position: absolute;
+                display: inline-block;
+                color: $color-red;
+                font-size: 26px;
+                font-family: $AGB;
+                background-color: $color-black;
+                top: -21px;
+                left: 21px;
+                padding: 0 8px;
+                width: 310px;
+            }
+            .name {
+                text-align: center;
+                color: $color-white;
+                font-size: 26px;
+                font-family: $AGB;
+                margin-top: 22px;
+            }
+            .phone {
+                color: $color-white;
+                font-size: 24px;
+                font-family: $AGR;
+                margin-top: 13px;
+                padding-left: 72px;
+                p {
+                    position: relative;
                     display: inline-block;
-                    color: $color-red;
-                    font-size: 26px;
-                    font-family: $AGB;
-                    background-color: $color-black;
-                    top: -21px;
-                    left: 22px;
-                    padding: 0 10px;
-                }
-                .name {
-                    text-align: center;
-                    color: $color-white;
-                    font-size: 26px;
-                    font-family: $AGB;
-                    margin-top: 22px;
-                }
-                .phone {
-                    color: $color-white;
-                    font-size: 24px;
-                    font-family: $AGR;
-                    margin-top: 13px;
-                    padding-left: 84px;
-                    p {
-                        position: relative;
-                        display: inline-block;
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            width: 25px;
-                            height: 25px;
-                            top: 5px;
-                            left: -41px;
-                            background-image: url('../images/contacts/phone.png');
-                        }
-                    }
-                }
-                .email {
-                    color: $color-white;
-                    font-size: 24px;
-                    font-family: $AGR;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    padding-left: 84px;
-                    p {
-                        position: relative;
-                        display: inline-block;
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            width: 31px;
-                            height: 21px;
-                            top: 5px;
-                            left: -45px;
-                            background-image: url('../images/contacts/mail.png');
-                        }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        top: 5px;
+                        left: -41px;
+                        background-image: url('../images/contacts/phone.png');
                     }
                 }
             }
-            .form {
-                padding: 7px;
-                border: 5px solid $color-red-2;
-                border-radius: 8px;
-                margin-top: 6px;
+            .email {
+                color: $color-white;
+                font-size: 24px;
+                font-family: $AGR;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                padding-left: 72px;
+                p {
+                    position: relative;
+                    display: inline-block;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 31px;
+                        height: 21px;
+                        top: 5px;
+                        left: -45px;
+                        background-image: url('../images/contacts/mail.png');
+                    }
+                }
             }
         }
         .photo {
-            width: 800px;
-            text-align: right;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: url('../images//contacts/photo.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .form {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: block;
+            padding: 7px;
+            border: 5px solid $color-red-2;
+            border-radius: 8px;
+            margin-top: 6px;
+            width: 380px;
+            box-sizing: border-box;
         }
     }
 }

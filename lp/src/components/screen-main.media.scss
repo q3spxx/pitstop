@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1199px) {
+    .screen-main {
+        .advantages {
+            .tabulation {
+                display: none;
+            }
+            .accordion {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .screen-main {
+        .advantages {
+            .tabulation {
+                display: none;
+            }
+            .accordion {
+                display: block;
+                min-height: 496px;
+            }
+        }
+    }
+}

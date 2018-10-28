@@ -1,20 +1,29 @@
 @import "components/fonts.scss";
+
 @import "components/common.scss";
+@import "components/common.media.scss";
 
 @import "components/header.scss";
+@import "components/header.media.scss";
 
 @import "components/screen-main.scss";
+@import "components/screen-main.media.scss";
 
 @import "components/screen-concept.scss";
+@import "components/screen-concept.media.scss";
 
 @import "components/screen-partner.scss";
+@import "components/screen-partner.media.scss";
 
 @import "components/screen-support.scss";
+@import "components/screen-support.media.scss";
 
 @import "components/screen-indicators.scss";
 
 @import "components/screen-formats.scss";
+@import "components/screen-formats.media.scss";
 
 @import "components/screen-contacts.scss";
+@import "components/screen-contacts.media.scss";
 
 @import "components/footer.scss";

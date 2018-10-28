@@ -2,11 +2,11 @@
     .grid {
         display: flex;
         flex-wrap: wrap;
-        height: 446px;
         align-content: space-between;
         .card {
             text-align: center;
-            width: 400px;
+            width: 380px;
+            height: 235px;
             box-sizing: border-box;
             padding: 0 30px;
             .image {

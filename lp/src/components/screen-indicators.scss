@@ -2,11 +2,12 @@
     .grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 30px;
         .card {
-            text-align: left;
-            width: 362px;
+            text-align: center;
+            width: 380px;
+            height: 311px;
             h4 {
                 font-family: $AGB;
                 font-size: 21px;
@@ -18,11 +19,17 @@
                 margin-bottom: 32px;
             }
             p {
+                text-align: left;
                 span {
                     font-family: $AGR;
                     font-weight: 200;
                     font-size: 14px;
-                    margin-left: 65px;
+                    margin-left: 70px;
+                }
+            }
+            &.graph2 {
+                img {
+                    margin-left: 3px;
                 }
             }
         }

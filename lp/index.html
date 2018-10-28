@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="yandex-verification" content="dd1a318e737c21b8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="pitstop кафе кофейня питстоп кофе москва">
+    <meta name="description" content="PitstopCafe: Франшиза-кафе с фиксированной стоимостью.">
     <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127805952-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127805952-1');
+    </script>
+
     <title>PitstopCafe: Франшиза-кафе с фиксированной стоимостью</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
             <div class="header">
-                <div class="bezier">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.28 86.78"><defs><style>.cls-1{fill:#CC342C;}</style></defs><title>bezier</title><path class="cls-1" d="M-47.82-407.64c59,0,16.84,78.25,67.28,78.25v8.53c-60,0-19.44-78.25-67.28-78.25Z" transform="translate(47.82 407.64)"/></svg>
-                </div>
-                <div class="left">
-                    <div class="logo line">
-                        <img src="dist/images/logo.png" alt="">
+                <div class="top">
+                    <div class="bezier">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.28 86.78"><defs><style>.cls-1{fill:#CC342C;}</style></defs><title>bezier</title><path class="cls-1" d="M-47.82-407.64c59,0,16.84,78.25,67.28,78.25v8.53c-60,0-19.44-78.25-67.28-78.25Z" transform="translate(47.82 407.64)"/></svg>
                     </div>
-                    <nav>
-                        <ul>
-                            <a href="#advantages"><li>Наши преимущества</li></a>
-                            <a href="#formats"><li>Форматы</li></a>
-                            <a href="#partner"><li>Регионы</li></a>
-                            <a href="#support"><li>Поддержка</li></a>
-                            <a href="#contacts"><li>Контакты</li></a>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="right">
-                    <div class="phone line">
-                        <a href="tel:+74954775219"><p class="number">+7 (495) 477 52 19</p></a>>
+                    <div class="left">
+                        <div class="logo line">
+                            <img src="dist/images/logo.png" alt="">
+                        </div>
+                        <div class="left-bottom">
+                            <div id="menu-button" class="menu-button"></div>
+                            <nav id="menu" class="menu"><ul></ul></nav>
+                            <div class="phone-mobile">
+                                <a href="tel:+74954775219"><p class="number">+7 (495) 477 52 19</p></a>>
+                            </div>
+                        </div>
                     </div>
+                    <div class="right">
+                        <div class="phone line">
+                            <a href="tel:+74954775219"><p class="number">+7 (495) 477 52 19</p></a>>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <nav id="menu-mobile" class="menu-mobile"><ul></ul></nav>
                 </div>
             </div>
         </div>
@@ -42,21 +58,33 @@
                 <h3>Франшиза-кафе <span>с фиксированной стоимостью</span></h3>
                 <h1>Открой PitStopКафе по франшизе с <span>окупаемостью<br>от 14 месяцев</span> и чистой прибылью от <span>90 000 рублей</span></h1>
                 <div class="advantages">
-                    <div id="tabs" class="tabs">
-                        <div class="tab accounting active"><p>Простая и понятная<br><span>бизнес-модель</span></p></div>
-                        <div class="tab ruble"><p><span>Честные условия</span><br>франшизы</p></div>
-                        <div class="tab wallet"><p><span>Роялти</span> в первые<br>три месяца <span>0%</span></p></div>
+                    <div id="tabulation" class="tabulation">
+                        <div class="tabs">
+                            <div class="icon title accounting active"><p></p></div>
+                            <div class="icon title ruble"><p></p></div>
+                            <div class="icon title wallet"><p></p></div>
+                        </div>
+                        <div class="container">
+                            <div class="description"></div>
+                        </div>
                     </div>
-                    <div class="container">
-                        <div id="content" class="content">
-                            Открой свой формат PitStopКафе:<br>
-                            Эспресс-кафе за <span>1 500 000 рублей</span>, в т.ч. паушальный взнос<br>
-                            Кофе поинт за <span>1 000 000 рублей</span>, в т.ч. паушальный взнос
+                    <div id="accordion" class="accordion">
+                        <div class="block active">
+                            <div class="icon title accounting"><p></p></div>
+                            <div class="description"></div>
+                        </div>
+                        <div class="block">
+                            <div class="icon title ruble"><p></p></div>
+                            <div class="description"></div>
+                        </div>
+                        <div class="block">
+                            <div class="icon title wallet"><p></p></div>
+                            <div class="description"></div>
                         </div>
                     </div>
                 </div>
                 <div class="ui">
-                    <a href="#contacts"><button class="button">оставить заявку</button></a>
+                    <div class="button"><a href="#contacts">оставить заявку</a></div>
                 </div>
             </div>
         </div>
@@ -124,7 +152,7 @@
                             <span>2018</span>
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card graph2">
                         <h4>Среднедневная выручка:</h4>
                         <img src="dist/images/indicators/graph2.png" alt="">
                         <p>
@@ -151,7 +179,7 @@
             <div class="screen partner">
                 <h3>Хочешь стать первым<br>партнером в своем регионе?</h3>
                 <div class="ui">
-                    <a href="#contacts"><button class="button">Оставить заявку</button></a>
+                    <div class="button"><a href="#contacts">Оставить заявку</a></div>
                 </div>
             </div>
         </div>
@@ -164,23 +192,31 @@
                 </div>
                 <div class="grid">
                     <div class="card cofe-point">
-                        <div class="image"></div>
-                        <p class="ad">Рекламные конструкции</p>
-                        <p class="software">Касса<br>и кассовое ПО</p>
-                        <p class="constructions">Несущие<br>конструкции</p>
-                        <div class="group">
-                            <p class="coffee-machine">Кофемашина</p>
-                            <p class="windows">2 охладительные<br>витрины</p>
+                        <div>
+                            <div class="image"></div>
+                            <div class="description">
+                                <p class="ad">Рекламные конструкции</p>
+                                <p class="software">Касса<br>и кассовое ПО</p>
+                                <p class="constructions">Несущие<br>конструкции</p>
+                                <div class="group">
+                                    <p class="coffee-machine">Кофемашина</p>
+                                    <p class="windows">2 охладительные<br>витрины</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card express-cafe">
-                        <div class="image"></div>
-                        <p class="ad">Рекламные конструкции</p>
-                        <p class="software">Касса<br>и кассовое ПО</p>
-                        <p class="constructions">Несущие<br>конструкции</p>
-                        <div class="group">
-                            <p class="coffee-machine">Кофемашина</p>
-                            <p class="windows">2 охладительные<br>витрины</p>
+                        <div>
+                            <div class="image"></div>
+                            <div class="description">
+                                <p class="ad">Рекламные конструкции</p>
+                                <p class="software">Касса<br>и кассовое ПО</p>
+                                <p class="constructions">Несущие<br>конструкции</p>
+                                <div class="group">
+                                    <p class="coffee-machine">Кофемашина</p>
+                                    <p class="windows">2 охладительные<br>витрины</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,25 +313,21 @@
                     <h2 class="line">Контакты</h2>
                 </div>
                 <div class="grid">
-                    <div class="info">
-                        <div class="contacts">
-                            <div class="title">Генеральный директор</div>
-                            <div class="name">
-                                <p>Мальцев Антон</p>
-                            </div>
-                            <div class="phone">
-                                <a href="tel:+74954775219"><p>+74954775219</p></a>
-                            </div>
-                            <div class="email">
-                                <p>np@pitstop-cafe.ru</p>
-                            </div>
+                    <div class="contacts">
+                        <div class="title">Генеральный директор</div>
+                        <div class="name">
+                            <p>Мальцев Антон</p>
                         </div>
-                        <div class="form">
-                            <script>var amo_forms_params = {"id":361063,"hash":"9d1c7b43f1ea3a7c88e7dea257773c79","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+                        <div class="phone">
+                            <a href="tel:+74954775219"><p>+74954775219</p></a>
+                        </div>
+                        <div class="email">
+                            <p>np@pitstop-cafe.ru</p>
                         </div>
                     </div>
-                    <div class="photo">
-                        <img src="dist/images//contacts/photo.jpg" alt="">
+                    <div class="photo"></div>
+                    <div class="form">
+                        <script>var amo_forms_params = {"id":361063,"hash":"9d1c7b43f1ea3a7c88e7dea257773c79","locale":"ru"};</script><script id="amoforms_script" async="async" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
                     </div>
                 </div>
             </div>
@@ -305,6 +337,47 @@
         <div class="wrapper">
             <p class="policy"><a target="_blank" href="docs/policy.pdf">Политика конфиденциальности</a></p>
             <p class="copyright">Copyright © 2018</p>
+            <div class="counter">
+                <!--LiveInternet counter--><script type="text/javascript">
+                document.write("<a href='//www.liveinternet.ru/click' "+
+                "target=_blank><img src='//counter.yadro.ru/hit?t12.7;r"+
+                escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+                "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                " часа, посетителей за 24 часа и за сегодня' "+
+                "border='0' width='88' height='31'><\/a>")
+                </script><!--</LiveInternet-->
+            </div>
+            <!-- Yandex.Metrika counter-->
+            <script type="text/javascript" >
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function() {
+                        try {
+                            w.yaCounter50812285 = new Ya.Metrika2({
+                                id:50812285,
+                                clickmap:true,
+                                trackLinks:true,
+                                accurateTrackBounce:true
+                            });
+                        } catch(e) { }
+                    });
+
+                    var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else { f(); }
+                })(document, window, "yandex_metrika_callbacks2");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/50812285" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+             <!--Yandex.Metrika counter -->
         </div>
     </footer>
     <script src="dist/js/script.js"></script>

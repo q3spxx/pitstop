@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1199px) {
+    .screen-formats {
+        .grid {
+            flex-direction: column;
+            .card {
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .screen-formats {
+        .grid {
+            .card {
+                .image {
+                    width: 380px;
+                }
+                .description {
+                    width: 380px;
+                }
+                p {
+                    font-size: 15px;
+                }
+                &.cofe-point {
+                    .description {
+                        .ad {
+                            padding-left: 174px;
+                            margin-top: 63px;
+                        }
+                        .software {
+                            margin-top: 81px;
+                        }
+                        .constructions {
+                            margin-top: 52px;
+                        }
+                        .group {
+                            .coffee-machine {
+                                margin-top: 44px;
+                                padding-left: 90px;
+                            }
+                            .windows {
+                                margin-top: 44px;
+                            }
+                        }
+                    }
+                }
+                &.express-cafe {
+                    .description {
+                        .ad {
+                            padding-left: 176px;
+                            margin-top: 74px;
+                        }
+                        .software {
+                            margin-top: 96px;
+                        }
+                        .constructions {
+                            margin-top: 38px;
+                        }
+                        .group {
+                            .coffee-machine {
+                                margin-top: 72px;
+                                padding-left: 86px;
+                            }
+                            .windows {
+                                margin-top: 72px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

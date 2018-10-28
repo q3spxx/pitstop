@@ -1,0 +1,3 @@
+User-agent: *
+
+Host: franchise.pitstop-cafe.ru

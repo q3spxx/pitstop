@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1199px) {
+    .screen-contacts {
+        .grid {
+            grid-template-columns: 395px 373px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .screen-contacts {
+        .grid {
+            grid-template-columns: 380px;
+            grid-template-rows: 170px 291px 291px;
+            .photo {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                background-size: contain;
+            }
+            .form {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+    }
+}

@@ -3,88 +3,157 @@
 header {
     background-color: $color_black;
     .header {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        .bezier {
-            width: 56px;
-            position: absolute;
-            left: 740px;
-            top: 26px;
-        }
-        .left {
-            display: inline-block;
-            .logo {
+        .top {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .bezier {
+                width: 56px;
+                position: absolute;
+                left: 740px;
+                top: 26px;
+            }
+            .left {
                 display: inline-block;
-                position: relative;
-                margin-bottom: 5.5px;
-                img {
-                    width: 308px;
+                .logo {
+                    display: inline-block;
+                    position: relative;
+                    margin-bottom: 5.5px;
+                    img {
+                        width: 308px;
+                    }
+                    &::after {
+                        top: 26px;
+                        width: 433px;
+                    }
+                    &::before {
+                        top: 26px;
+                        width: 5000px;
+                        left: -5000px;
+                    }
                 }
-                &::after {
-                    top: 26px;
-                    width: 433px;
+
+                &-bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                 }
-                &::before {
-                    top: 26px;
-                    width: 5000px;
-                    left: -5000px;
+                
+                .menu {
+                    ul {
+                        li {
+                            display: inline-flex;
+                            border-bottom: 3px solid transparent;
+                            cursor: pointer;
+                            a {
+                                font-family: $AGB;
+                                color: $color-white;
+                                text-transform: uppercase;
+                                padding: 18px 17px 20px 17px;
+                            }
+                            &:hover {
+                                a {
+                                    color: $color_black;
+                                }
+                                background-color: $color-white;
+                                border-bottom-color: $color-red;
+                            }
+                        }
+                    }
+                    &-button {
+                        display: none;
+                        margin-top: 10px;
+                        width: 71px;
+                        height: 25px;
+                        background-image: url('../images/menu.png');
+                        cursor: pointer;
+                    }
+                }
+                .phone-mobile {
+                    display: none;
+                    .number {
+                        position: relative;
+                        font-family: $AGB;
+                        font-size: 16px;
+                        color: $color-white;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -4px;
+                            left: -32px;
+                            width: 25px;
+                            height: 25px;
+                            background-image: url('../images/phone-call.png');
+                            background-size: cover;
+                        }
+                    }
                 }
             }
-            
-            nav {
-                ul {
-                    display: flex;
-                    li {
+        
+            .right {
+                display: inline-block;
+                .phone {
+                    position: relative;
+                    margin-top: 84px;
+                    padding-left: 38px;
+                    padding-right: 7px;
+                    &::after {
+                        top: 7px;
+                        width: 5000px;
+                    }
+                    &::before {
+                        top: 7px;
+                        width: 161px;
+                        left: -161px;
+                    }
+                    .number {
+                        position: relative;
                         font-family: $AGB;
+                        font-size: 16px;
                         color: $color-white;
-                        text-transform: uppercase;
-                        padding: 18px 18px 20px 18px;
-                        border-bottom: 3px solid transparent;
-                        &:hover {
-                            background-color: $color-white;
-                            color: $color_black;
-                            cursor: pointer;
-                            border-bottom-color: $color-red;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -4px;
+                            left: -32px;
+                            width: 25px;
+                            height: 25px;
+                            background-image: url('../images/phone-call.png');
+                            background-size: cover;
                         }
                     }
                 }
             }
         }
-    
-        .right {
-            display: inline-block;
-            .phone {
-                position: relative;
-                margin-top: 84px;
-                padding-left: 38px;
-                padding-right: 7px;
-                &::after {
-                    top: 7px;
-                    width: 5000px;
-                }
-                &::before {
-                    top: 7px;
-                    width: 221px;
-                    left: -221px;
-                }
-                .number {
-                    position: relative;
-                    font-family: $AGB;
-                    font-size: 16px;
-                    color: $color-white;
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: -4px;
-                        left: -32px;
-                        width: 25px;
-                        height: 25px;
-                        background-image: url('../images/phone-call.png');
-                        background-size: cover;
-                    }
-                }
+    }
+    .bottom {
+        .menu-mobile {
+            display: none;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .3s ease;
+            &.open {
+                max-height: 305px;
             }
+        }
+    }
+    li {
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        a {
+            display: block;
+            font-family: $AGB;
+            color: $color-white;
+            text-transform: uppercase;
+            padding: 18px 17px 20px 17px;
+            text-align: center;
+        }
+        &:hover {
+            a {
+                color: $color_black;
+            }
+            background-color: $color-white;
+            border-bottom-color: $color-red;
         }
     }
 }
