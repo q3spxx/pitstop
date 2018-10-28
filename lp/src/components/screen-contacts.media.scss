@@ -1,14 +1,14 @@
 @media only screen and (max-width: 1199px) {
     .screen-contacts {
         .grid {
-            grid-template-columns: 395px 373px;
+            grid-template-columns: 375px 393px;
         }
     }
 }
 @media only screen and (max-width: 767px) {
     .screen-contacts {
         .grid {
-            grid-template-columns: 380px;
+            grid-template-columns: 360px;
             grid-template-rows: 170px 291px 291px;
             .photo {
                 grid-column-start: 1;

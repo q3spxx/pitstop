@@ -1,0 +1,22 @@
+@media only screen and (max-width: 767px) {
+    .screen-indicators {
+        .grid {
+            .card {
+                width: 360px;
+                img {
+                    width: 360px;
+                }
+                p {
+                    span {
+                        margin-left: 64px;
+                    }
+                }
+                &.graph2 {
+                    img {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

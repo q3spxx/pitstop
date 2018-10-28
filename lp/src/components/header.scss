@@ -2,6 +2,7 @@
 
 header {
     background-color: $color_black;
+    overflow-x: hidden;
     .header {
         .top {
             display: flex;

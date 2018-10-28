@@ -8,7 +8,7 @@
     }
     .grid {
         display: grid;
-        grid-template-columns: 410px 730px;
+        grid-template-columns: 390px 750px;
         grid-template-rows: 170px 291px;
         .contacts {
             grid-column-start: 1;
@@ -18,7 +18,7 @@
             position: relative;
             border: 5px solid $color-red-2;
             border-radius: 8px;
-            width: 380px;
+            width: 360px;
             padding: 0px 30px;
             box-sizing: border-box;
             .title {
@@ -29,7 +29,7 @@
                 font-family: $AGB;
                 background-color: $color-black;
                 top: -21px;
-                left: 21px;
+                left: 12px;
                 padding: 0 8px;
                 width: 310px;
             }
@@ -101,7 +101,7 @@
             border: 5px solid $color-red-2;
             border-radius: 8px;
             margin-top: 6px;
-            width: 380px;
+            width: 360px;
             box-sizing: border-box;
         }
     }

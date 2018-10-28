@@ -8,4 +8,14 @@
         }
     }
 }
+@media only screen and (max-width: 767px) {
+    .screen-support {
+        .grid {
+            .card {
+                width: 360px;
+                padding: 0 30px;
+            }
+        }
+    }
+}
 
