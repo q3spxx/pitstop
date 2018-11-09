@@ -635,6 +635,12 @@ header li:hover a {
 .screen-indicators .grid .card.graph2 img {
   margin-left: 3px;
 }
+.screen-indicators p {
+  text-align: center;
+  color: #CC342C;
+  font-size: 16px;
+  font-family: "AGB";
+}
 
 @media only screen and (max-width: 767px) {
   .screen-indicators .grid .card {
