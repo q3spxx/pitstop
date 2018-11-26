@@ -157,10 +157,10 @@ const init = () => {
     window.auth = () => {
         const headers = new Headers();
         headers.append('Accept', '*/*');
-        fetch('https://pitstopcafe.amocrm.ru/private/api/auth.php?type=json&USER_LOGIN=np@pitstop-cafe.ru&USER_HASH=b49967eaa6c9a2d04d347b0e544bb8877a604c48', {
+        fetch('https://pitstopcafe.amocrm.ru/private/api/auth.php?type=json', {
             headers: headers,
-            method: 'GET',
-            mode: 'no-cors',
+            method: 'POST',
+            body: 'USER_LOGIN=np@pitstop-cafe.ru&USER_HASH=b49967eaa6c9a2d04d347b0e544bb8877a604c48',
         }).then(res => console.log(res))
     }
 };
