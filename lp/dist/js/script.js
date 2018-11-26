@@ -155,10 +155,7 @@ const init = () => {
         fetch('https://pitstopcafe.amocrm.ru/private/api/auth.php', {
             method: 'POST',
             mode: 'no-cors',
-            body: JSON.stringify({
-                USER_LOGIN: 'np@pitstop-cafe.ru',
-                USER_HASH: 'b49967eaa6c9a2d04d347b0e544bb8877a604c48',
-            }),
+            body: 'USER_LOGIN=np@pitstop-cafe.ru&USER_HASH=b49967eaa6c9a2d04d347b0e544bb8877a604c48',
         }).then(res => console.log(res))
     }
 };
