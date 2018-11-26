@@ -90,7 +90,7 @@ const init = () => {
 
     window.sendForm = () => {
         const headers = new Headers();
-        headers.append('Accept', 'text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
+        headers.append('Accept', 'text/html, text/xml, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
         fetch('https://pitstopcafe.amocrm.ru/api/v2/leads', {
             headers: headers,
             method: 'POST',
@@ -156,7 +156,7 @@ const init = () => {
 
     window.auth = () => {
         const headers = new Headers();
-        headers.append('Accept', 'text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
+        headers.append('Accept', 'text/html, text/xml, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
         fetch('https://pitstopcafe.amocrm.ru/private/api/auth.php', {
             headers: headers,
             method: 'POST',
