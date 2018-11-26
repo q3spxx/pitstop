@@ -89,7 +89,10 @@ const init = () => {
     initMenuButton();
 
     window.sendForm = () => {
+        const headers = new Headers();
+        headers.append('Accept', 'text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
         fetch('https://pitstopcafe.amocrm.ru/api/v2/leads', {
+            headers: headers,
             method: 'POST',
             mode: 'no-cors',
             body: JSON.stringify({
@@ -152,7 +155,10 @@ const init = () => {
     };
 
     window.auth = () => {
+        const headers = new Headers();
+        headers.append('Accept', 'text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8');
         fetch('https://pitstopcafe.amocrm.ru/private/api/auth.php', {
+            headers: headers,
             method: 'POST',
             mode: 'no-cors',
             body: 'USER_LOGIN=np@pitstop-cafe.ru&USER_HASH=b49967eaa6c9a2d04d347b0e544bb8877a604c48',
